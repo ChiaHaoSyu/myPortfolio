@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiaHao Hsu</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--JavaScript-->
+    <script src="./JavaScript/scrolltop-btn.js"></script>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Go to top button-->
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+    <!-- Header section-->
+    <div class="header">
+        <nav>
+            <h2 class="logo"></h2>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#works">WORKS</a></li>
+            </ul>
+            <a href="#contact" class="btn">Contact</a>
+        </nav>
+
+        <div class="content">
+            <div class="body">
+                <div class="portfolioInfo">
+                    <h4>Hi,I'm</h4>
+                    <h1>ChiaHao Hsu</h1>
+                </div>
+                <img src="./images/myPhoto.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- About me section-->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="images/myPhoto.jpeg" alt="">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>你好，我叫許家豪。<br>
+                    平時興趣是打電玩，喜歡自己動手做東西，<br>
+                    擅長使用遊戲引擎Unity及網頁設計。
+                </p>
+                <div class="resume-link">
+                    <a href="#" class="work-link-btn">履歷 Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skill section-->
+    <div class="skill" id="skill">
+        <div>
+            <h2 class="sub-title">Skill</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h5>Website Design</h5>
+                <div class="paragraph">
+                    <p>
+                        網頁設計/前端設計<br>
+                        HTML/CSS/JavaScript
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-unity"></i>
+                <h5>Game Engine</h5>
+                <div class="paragraph">
+                    <p>
+                        遊戲引擎<br>
+                        Unity
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-language"></i>
+                <h5>Language</h5>
+                <div class="paragraph">
+                    <p>
+                        語言<br>
+                        日本語 English 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--portfolio section-->
+    <div class="portfolio" id="works">
+        <div class="container">
+            <h2 class="sub-title">Works</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work_1.jpg" alt="">
+                    <div class="work-text">
+                        <h2>畸校JiXiao</h2>
+                        <h4>Unity<br>(主程式及Unity物件建置)</h4>
+                    </div>
+                    <div class="work-link">
+                        <a href="https://chiahaosyu.github.io/JiXiaoWebGL/" class="work-link-btn">作品連結</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/work_2.png" alt="">
+                    <div class="work-text">
+                        <h2>鯊魚頭建模</h2>
+                        <h4>ZBrush</h4>
+                    </div>
+                    <div class="work-link">
+                        <a href="#" class="work-link-btn">作品連結</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/work_3.png" alt="">
+                    <div class="work-text">
+                        <h2>簡單建築物建模</h2>
+                        <h4>Blender</h4>
+                    </div>
+                    <div class="work-link">
+                        <a href="#" class="work-link-btn">作品連結</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <P>許家豪<br>
+            ChiaHao Hsu</P>
+        <div class="contact" id="contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email:syuchiahao@gmail.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
