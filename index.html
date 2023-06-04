@@ -8,8 +8,6 @@
     <title>ChiaHao Hsu</title>
     <!--CSS-->
     <link rel="stylesheet" href="./CSS/style.css">
-    <!--JavaScript-->
-    <script src="./JavaScript/scrolltop-btn.js"></script>
     <!--fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -22,6 +20,8 @@
 </head>
 
 <body>
+    <!--JavaScript-->
+    <!--script type="text/JavaScript" src="./JavaScript/scrolltop-btn.js"></script-->
     <!--Go to top button-->
     <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
     <!-- Header section-->
@@ -98,7 +98,7 @@
                 <div class="paragraph">
                     <p>
                         語言<br>
-                        日本語 English 
+                        日本語 English
                     </p>
                 </div>
             </div>
@@ -155,6 +155,28 @@
             <p>Email:syuchiahao@gmail.com</p>
         </div>
     </footer>
+
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("scrollTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 
 </body>
 
